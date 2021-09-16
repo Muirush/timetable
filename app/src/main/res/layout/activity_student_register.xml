@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".StudentRegister">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Full name"
+            android:id="@+id/regFullname"
+            android:textColor="@color/black"
+            android:textSize="21dp"
+            android:gravity="center"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:id="@+id/regRegno"
+            android:gravity="center"
+            android:hint="Enter Registration number"
+            android:textColor="@color/black"
+            android:textSize="21dp"/>
+        <EditText
+            android:textColor="@color/black"
+            android:textSize="21dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:hint="Enter Current year of study"
+            android:gravity="center"
+            android:id="@+id/regYearofStudy"
+            />
+        <EditText
+            android:textColor="@color/black"
+            android:textSize="21dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:hint="Enter Your Faculty"
+            android:gravity="center"
+            android:id="@+id/regFaculty"/>
+        <EditText
+            android:textColor="@color/black"
+            android:textSize="21dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:hint="Enter Your Department"
+            android:gravity="center"
+            android:id="@+id/regDepartment"/>
+        <EditText
+            android:textColor="@color/black"
+            android:textSize="21dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:id="@+id/regPassword"
+            android:inputType="textPassword"
+            android:hint="Enter Password"/>
+        <EditText
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textSize="21dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:id="@+id/regPassword1"
+            android:hint="Confirm Password"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_marginTop="32dp"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textSize="21dp"
+            android:id="@+id/studentRegister"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="backToLogin"
+            android:text="I have an account"/>
+
+
+
+
+</LinearLayout>
+    </layout>

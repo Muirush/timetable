@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".AdminLogin">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your username"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:id="@+id/adminUsername"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your password"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/black"
+        android:id="@+id/adminPassword"
+
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textSize="24dp"
+        android:layout_marginTop="32dp"
+        android:id="@+id/adminLogin"
+        android:onClick="logInAdminFunction"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Admin's Password?"
+        android:onClick="forgotAdminPwd"
+        android:layout_marginTop="32dp"
+        />
+
+</LinearLayout>
+</layout>
